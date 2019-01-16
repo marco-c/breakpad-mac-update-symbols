@@ -38,7 +38,7 @@
     "metadata": {
         "name": "breakpad-mac-update-symbols",
         "description": "Scrape symbols from Apple system updates",
-        "owner": "ted@mielczarek.org",
-        "source": "https://github.com/luser/breakpad-mac-update-symbols/blob/master/fetch-task.json"
+        "owner": "mcastelluccio@mozilla.com",
+        "source": "https://github.com/marco-c/breakpad-mac-update-symbols/blob/master/fetch-task.json"
     }
 }

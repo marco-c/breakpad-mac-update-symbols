@@ -19,7 +19,7 @@
     "metadata": {
         "name": "OS X symbol fetching decision task",
         "description": "Decision task to be scheduled as a Taskcluster hook to run OS X symbol fetching tasks",
-        "owner": "ted@mielczarek.org",
-        "source": "https://github.com/luser/breakpad-mac-update-symbols/blob/master/hook.json"
+        "owner": "mcastelluccio@mozilla.com",
+        "source": "https://github.com/marco-c/breakpad-mac-update-symbols/blob/master/hook.json"
     }
 }

@@ -24,7 +24,7 @@
     "metadata": {
         "name": "Upload Symbols",
         "description": "Upload Symbols",
-        "owner": "ted@mielczarek.org",
-        "source": "https://github.com/luser/breakpad-mac-update-symbols/blob/master/upload-task.json"
+        "owner": "mcastelluccio@mozilla.com",
+        "source": "https://github.com/marco-c/breakpad-mac-update-symbols/blob/master/upload-task.json"
     }
 }
