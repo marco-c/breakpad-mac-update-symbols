@@ -6,4 +6,5 @@ set -v -e -x
 pip install redo
 pip install requests
 
-python upload_symbols.py https://queue.taskcluster.net/v1/task/${ARTIFACT_TASKID}/artifacts/public/build/target.crashreporter-symbols.zip
+URL=https://queue.taskcluster.net/v1/task/${ARTIFACT_TASKID}/artifacts/public/build/target.crashreporter-symbols.zip
+wget -q --method HEAD "${URL}" && python upload_symbols.py ${URL}
