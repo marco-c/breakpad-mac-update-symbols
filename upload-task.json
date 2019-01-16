@@ -13,7 +13,7 @@
         "command": [
             "/bin/bash",
             "-c",
-            "git clone https://github.com/marco-c/breakpad-mac-update-symbols/ && cd breakpad-mac-update-symbols && /bin/bash update.sh"
+            "git clone https://github.com/marco-c/breakpad-mac-update-symbols/ && cd breakpad-mac-update-symbols && /bin/bash upload.sh"
         ],
         "env": {
             "ARTIFACT_TASKID": "{fetch_task_id}",
