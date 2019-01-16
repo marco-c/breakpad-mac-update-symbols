@@ -20,7 +20,7 @@ import argparse
 import logging
 import os
 import sys
-from mozbuild.base import MozbuildObject
+
 log = logging.getLogger('upload-symbols')
 log.setLevel(logging.INFO)
 
@@ -57,9 +57,6 @@ def get_taskcluster_secret(secret_name):
 
 
 def main():
-    config = MozbuildObject.from_environment()
-    config._activate_virtualenv()
-
     import redo
     import requests
 
