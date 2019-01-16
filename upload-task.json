@@ -10,6 +10,9 @@
     ],
     "payload": {
         "image": "python",
+        "features": {
+            "taskclusterProxy": true
+        },
         "command": [
             "/bin/bash",
             "-c",
