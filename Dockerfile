@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 # If host is running squid-deb-proxy on port 8000, populate /etc/apt/apt.conf.d/30proxy
 # By default, squid-deb-proxy 403s unknown sources, so apt shouldn't proxy ppa.launchpad.net
 RUN awk '/^[a-z]+[0-9]+\t00000000/ { printf("%d.%d.%d.%d\n", "0x" substr($3, 7, 2), "0x" substr($3, 5, 2), "0x" substr($3, 3, 2), "0x" substr($3, 1, 2)) }' < /proc/net/route > /tmp/host_ip.txt
