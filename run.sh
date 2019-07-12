@@ -31,7 +31,8 @@ cp "${base}/repo_sync" /home/worker/venv/bin/repo_sync
 repo_sync --no-download
 
 # Next, fetch just the update packages we're interested in.
-repo_sync $(python "${base}/list-packages.py")
+packages=$(python "${base}/list-packages.py")
+repo_sync $packages
 
 du -sh /opt/data-reposado
 
