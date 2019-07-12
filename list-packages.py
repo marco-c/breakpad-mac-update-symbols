@@ -13,7 +13,7 @@ for product_id, p in products.iteritems():
   if t.startswith('OS X') or t.startswith('Mac OS X') or t.startswith('macOS'):
     args.append('--product-id=' + product_id)
   else:
-    print('Skipping ' + t + ' for repo_sync')
+    print >> sys.stderr, 'Skipping ' + t + ' for repo_sync'
 if 'JUST_ONE_PACKAGE' in os.environ:
   args = args[:1]
 
