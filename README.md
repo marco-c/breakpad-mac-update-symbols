@@ -8,7 +8,7 @@ textual symbol format.
 
 A [Dockerfile](Dockerfile) is provided to ease usage given the number of
 prerequisites. You can pull a prebuilt image from
-`luser/breakpad-mac-update-symbols` on Docker Hub.
+`marcocas/breakpad-mac-update-symbols` on Docker Hub.
 
 This software is provided under the MIT license. See [LICENSE](LICENSE).
 
