@@ -8,7 +8,7 @@ import sys
 import reposadolib.reposadocommon as reposadocommon
 reposadocommon.get_main_dir = lambda: '/home/worker/venv/bin/'
 
-products = reposadocommon.get_product_info()
+products = reposadocommon.getProductInfo()
 args = []
 for product_id, p in products.iteritems():
   t = p['title']
