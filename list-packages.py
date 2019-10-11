@@ -11,7 +11,10 @@ reposadocommon.get_main_dir = lambda: '/home/worker/venv/bin/'
 products = reposadocommon.getProductInfo()
 args = []
 for product_id, p in products.iteritems():
-  t = p['title']
+  try:
+    t = p['title']
+  except KeyError:
+    print("Missing title in {}, skipping".format(p), file=sys.stderr)
   #p['CatalogEntry']['Packages']
   if t.startswith('OS X') or t.startswith('Mac OS X') or t.startswith('macOS'):
     args.append('--product-id=' + product_id)
