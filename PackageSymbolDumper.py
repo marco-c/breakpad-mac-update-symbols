@@ -208,7 +208,7 @@ def dump_symbols_from_package(executor, dump_syms, pkg, dest):
             dump_symbols_from_payload(executor, dump_syms, payload, dest)
 
     except Exception as e:
-        logger.error("Exception while dumping symbols from package: {}".format(e))
+        logging.error("Exception while dumping symbols from package: {}".format(e))
 
     finally:
         if temp_dir is not None:
