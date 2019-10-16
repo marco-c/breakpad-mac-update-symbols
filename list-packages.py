@@ -15,6 +15,7 @@ for product_id, p in products.iteritems():
     t = p['title']
   except KeyError:
     print("Missing title in {}, skipping".format(p), file=sys.stderr)
+    continue
   #p['CatalogEntry']['Packages']
   if t.startswith('OS X') or t.startswith('Mac OS X') or t.startswith('macOS'):
     args.append('--product-id=' + product_id)
