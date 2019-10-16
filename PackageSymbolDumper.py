@@ -207,6 +207,9 @@ def dump_symbols_from_package(executor, dump_syms, pkg, dest):
         for payload in find_payloads(temp_dir):
             dump_symbols_from_payload(executor, dump_syms, payload, dest)
 
+    except Exception as e:
+        logger.error("Exception while dumping symbols from package: {}".format(e))
+
     finally:
         if temp_dir is not None:
             shutil.rmtree(temp_dir, onerror=shutil_error_handler)
