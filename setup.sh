@@ -48,7 +48,7 @@ http://example.com/
 EOF
 
 cd $WORK
-git clone https://github.com/luser/breakpad-scrape-system-symbols.git
+git clone https://github.com/marco-c/breakpad-scrape-system-symbols.git
 cd breakpad-scrape-system-symbols
 python setup.py install
 
